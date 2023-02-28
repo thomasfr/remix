@@ -44,7 +44,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ./build
-          key: remix-build-$GITHUB_SHA
+          key: remix-build-${{ github.sha }}
 
   test:
     name: "🧪 Test: (OS: ${{ matrix.os }} Node: ${{ matrix.node }})"
@@ -129,7 +129,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ./build
-          key: remix-build-$GITHUB_SHA
+          key: remix-build-${{ github.sha }}
 
       - name: 👀 Run Integration Tests ${{ matrix.browser }}
         shell: bash
@@ -188,7 +188,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ./build
-          key: remix-build-$GITHUB_SHA
+          key: remix-build-${{ github.sha }}
 
       - name: 👀 Run Integration Tests ${{ matrix.browser }}
         shell: bash
@@ -249,7 +249,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ./build
-          key: remix-build-$env:GITHUB_SHA
+          key: remix-build-${{ github.sha }}
 
       - name: 👀 Run Integration Tests ${{ matrix.browser }}
         shell: bash
