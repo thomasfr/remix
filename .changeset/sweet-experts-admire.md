@@ -1,10 +1,10 @@
 ---
-"remix": patch
-"@remix-run/dev": patch
-"@remix-run/react": patch
-"@remix-run/serve": patch
-"@remix-run/server-runtime": patch
-"@remix-run/testing": patch
+"remix": major
+"@remix-run/dev": major
+"@remix-run/react": major
+"@remix-run/serve": major
+"@remix-run/server-runtime": major
+"@remix-run/testing": major
 ---
 
 remove v1 route convention codepaths
